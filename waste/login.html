@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<style>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			form{
+			align-self: center;
+			margin-top: 10%;
+			margin-left:25%;
+			}			
+			input[type=password], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+			input[type=number], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		 }
+		input[type=submit] {
+		  width: 40%;
+		  background-color: #595959;
+		  color: white;
+		  padding: 14px 20px;
+		  margin-left:  12% ;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		h2{
+			margin-left:  18% ;
+		}
+		body{
+			margin-top: 10%;
+			margin-left: 25%;
+		}
+	
+	</style>
+
+
+
+
+<head>
+	<title>Form Design</title>
+</head>
+	<body style="background-color:#f2f2f2;">
+		
+		<form action="index2_verify.php" method="post">
+			<h2 >Registration form</h2>
+			Roll No:-  &nbsp &nbsp <input type="number" name="pnr" required>
+			<br><br>
+			Password:- &nbsp <input type="Password" name="pass" required>
+			<br><br>         
+			<input type="submit" name="submit">
+			<br>
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<style>
+			form{
+			align-self: center;
+			margin-top: 2%;
+			margin-left:25%;
+			}	
+			input[type=text], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+			input[type=number], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+			input[type=password], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+		input[type=submit] {
+		  width: 40%;
+
+		  background-color: #595959;
+		  color: white;
+		  padding: 14px 20px;
+		  margin-left:  12% ;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input[type=radio] {
+		  width: 3%;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input[type=checkbox] {
+		  width: 10%;
+		  margin-left: 0%;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		h2{
+		text-align: left;
+		padding-left: 20%; 		
+		}
+	</style>
+
+
+
+
+<head>
+	<title>Form Design</title>
+</head>
+	<body style="background-color:#f2f2f2;">
+		
+		<form action="index-1.php" method="post">
+			<h2>Registration form</h2>
+			First name :-<input type="text" name="First" required>
+			<br><br>
+			Last name :-<input type="text" name="Last" required>
+			<br><br>
+			Roll No:-  &nbsp &nbsp <input type="text" name="pnr" required>
+			<br><br>
+			Password:- &nbsp <input type="Password" name="pass" required>
+			<br><br>
+		     <script type="text/javascript">
+		    $(document).ready(function(){
+		        $("input[type='button']").click(function(){
+		            var radioValue = $("input[name='gen']:checked").val();
+		            if(radioValue){
+		                alert("Your are a - " + radioValue);
+		            }
+		        });
+		        
+		    });
+			</script>
+
+			<input type="radio" name="gen" value="teacher"> Teacher
+			<input type="radio" name="gen" value="student"> Student
+			<br><br>
+
+			<label for="class"> Class &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+			 
+			 <select id="class" onchange="getSelectValue" name="Department">	    	
+	  		<option value="faculty">Faculty</option>
+	  		<option value="first_year">First Year</option>
+	    	<option value="second_year">Second Year</option>
+	    	<option value="third_year">Third Year</option>
+	  	  	</select>
+	  	  	   
+	  	  	<br><br>
+	  	  
+			<input type="submit" name="submit">
+			<br>
+	
+		</form>
+
+	</body>
+</html>
