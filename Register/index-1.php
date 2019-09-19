@@ -6,7 +6,16 @@ $pass=$_POST['pass'];
 $faculty=$_POST['Department'];
 $class=$_POST['optradio'];
 
-$con=mysqli_connect("localhost","root","","lib") or die(mysqli_error());
+
+try {
+  $con=mysqli_connect("localhost","root","","lib") or die(mysqli_error());
+}
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
+
 
 $query = "insert into lib(First,Last,pnr,pass,faculty,class) values('".$First."','".$Last."','".$pnr."','".$pass."','".$class."','".$faculty."');";
 if(mysqli_query($con,$query))

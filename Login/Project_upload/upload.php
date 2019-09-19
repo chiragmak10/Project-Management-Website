@@ -33,4 +33,5 @@
 	else{
 		echo "<script type='text/javascript'>alert('Failed file updation');</script>";
 	}
+	session_destroy();
 	?>
